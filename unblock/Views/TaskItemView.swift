@@ -36,7 +36,7 @@ struct TaskItemView: View {
 }
 
 struct TaskItemView_Preview: PreviewProvider {
-    @State static var task = TaskType(id: 1, name: "Take the trash out", description: "When it is time", date: Date(), durationInMinutes: 30, completed: false, createdAt: Date(), isHabit: false, location: "Kitchen", isAllDay: false)
+    @State static var task = TaskType(id: 1, name: "Take the trash out", description: "When it is time", startDate: Date(),endDate: Date(), durationInMinutes: 30, completed: false, createdAt: Date(), isHabit: false, location: "Kitchen", isAllDay: false)
 
     static var previews: some View {
         TaskItemView(task: task)

@@ -4,7 +4,8 @@ struct TaskType: Identifiable {
     var id: Int
     var name: String
     var description: String
-    var date: Date
+    var startDate: Date
+    var endDate: Date
     var durationInMinutes: Int
     var completed: Bool
     var createdAt: Date
@@ -17,7 +18,6 @@ struct TaskType: Identifiable {
     var notes: String?
     var priority: Int?
     var url: URL?
-    var endDate: Date?
     var isAllDay: Bool
     var organizer: String?
     var status: String?

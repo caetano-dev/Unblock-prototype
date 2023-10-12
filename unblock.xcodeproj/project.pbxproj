@@ -10,6 +10,9 @@
 		EF11AFF92AD4A3A7004CB77E /* unblockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11AFF82AD4A3A7004CB77E /* unblockApp.swift */; };
 		EF11AFFD2AD4A3A8004CB77E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF11AFFC2AD4A3A8004CB77E /* Assets.xcassets */; };
 		EF11B0002AD4A3A8004CB77E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF11AFFF2AD4A3A8004CB77E /* Preview Assets.xcassets */; };
+		EF148AAA2AD88623000A2449 /* CreateCalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF148AA92AD88623000A2449 /* CreateCalendarEvent.swift */; };
+		EF148AAC2AD88FAA000A2449 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF148AAB2AD88FAA000A2449 /* CreateTaskView.swift */; };
+		EF148AAE2AD89374000A2449 /* RequestCalendarAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF148AAD2AD89374000A2449 /* RequestCalendarAccess.swift */; };
 		EF4A0EBA2AD849C2006B10B4 /* TaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A0EB92AD849C2006B10B4 /* TaskType.swift */; };
 		EF4A0EBD2AD84AB6006B10B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A0EBC2AD84AB6006B10B4 /* ContentView.swift */; };
 		EF4A0EBF2AD84B5B006B10B4 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A0EBE2AD84B5B006B10B4 /* DataSourceMock.swift */; };
@@ -22,11 +25,15 @@
 		EF11AFF82AD4A3A7004CB77E /* unblockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unblockApp.swift; sourceTree = "<group>"; };
 		EF11AFFC2AD4A3A8004CB77E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF11AFFF2AD4A3A8004CB77E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF148AA92AD88623000A2449 /* CreateCalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCalendarEvent.swift; sourceTree = "<group>"; };
+		EF148AAB2AD88FAA000A2449 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		EF148AAD2AD89374000A2449 /* RequestCalendarAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCalendarAccess.swift; sourceTree = "<group>"; };
 		EF4A0EB92AD849C2006B10B4 /* TaskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskType.swift; sourceTree = "<group>"; };
 		EF4A0EBC2AD84AB6006B10B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF4A0EBE2AD84B5B006B10B4 /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
 		EF4A0EC22AD84FC7006B10B4 /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		EF4A0EC42AD85C01006B10B4 /* TasksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListView.swift; sourceTree = "<group>"; };
+		EF66151E2AD89A1400034420 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +75,13 @@
 		EF11AFF72AD4A3A7004CB77E /* unblock */ = {
 			isa = PBXGroup;
 			children = (
-				EF4A0EC02AD84F99006B10B4 /* New Group */,
+				EF148AA82AD8860A000A2449 /* Utils */,
 				EF4A0EBB2AD84A69006B10B4 /* App */,
 				EF0578F82AD76C3F00E63969 /* Models */,
 				EF16F8B42AD5CB29007E6231 /* Views */,
 				EF11AFFC2AD4A3A8004CB77E /* Assets.xcassets */,
 				EF11AFFE2AD4A3A8004CB77E /* Preview Content */,
+				EF66151E2AD89A1400034420 /* PrivacyInfo.xcprivacy */,
 			);
 			path = unblock;
 			sourceTree = "<group>";
@@ -86,11 +94,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EF148AA82AD8860A000A2449 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF148AA92AD88623000A2449 /* CreateCalendarEvent.swift */,
+				EF148AAD2AD89374000A2449 /* RequestCalendarAccess.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		EF16F8B42AD5CB29007E6231 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				EF4A0EC22AD84FC7006B10B4 /* TaskItemView.swift */,
 				EF4A0EC42AD85C01006B10B4 /* TasksListView.swift */,
+				EF148AAB2AD88FAA000A2449 /* CreateTaskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,13 +120,6 @@
 				EF4A0EBC2AD84AB6006B10B4 /* ContentView.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		EF4A0EC02AD84F99006B10B4 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF4A0EC32AD84FC7006B10B4 /* TaskItemView.swift in Sources */,
+				EF148AAC2AD88FAA000A2449 /* CreateTaskView.swift in Sources */,
 				EF4A0EBF2AD84B5B006B10B4 /* DataSourceMock.swift in Sources */,
+				EF148AAA2AD88623000A2449 /* CreateCalendarEvent.swift in Sources */,
 				EF4A0EBA2AD849C2006B10B4 /* TaskType.swift in Sources */,
 				EF4A0EC52AD85C01006B10B4 /* TasksListView.swift in Sources */,
+				EF148AAE2AD89374000A2449 /* RequestCalendarAccess.swift in Sources */,
 				EF4A0EBD2AD84AB6006B10B4 /* ContentView.swift in Sources */,
 				EF11AFF92AD4A3A7004CB77E /* unblockApp.swift in Sources */,
 			);
