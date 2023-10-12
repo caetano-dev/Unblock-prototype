@@ -18,7 +18,6 @@ struct TaskView: View {
                     .font(.subheadline)
             }
         }
-        .padding()
         .cornerRadius(10.0)
         
     }

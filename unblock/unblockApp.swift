@@ -10,13 +10,16 @@ struct unblockApp: App {
         WindowGroup {
             NavigationView {
                 VStack {
-                    TaskListView(taskName: $taskName, taskDescription: $taskDescription)
-                    Text("hello")
-                    CreateTaskButtonView(taskName: $taskName, taskDescription: $taskDescription)
-                .navigationTitle("Home")
+                    HomeView(taskName: $taskName, taskDescription: $taskDescription)
                 }
+                
             }
         }
     }
 }
-
+@available(iOS 15.0, *)
+struct unblockApp_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView(taskName: .constant("Sample Task"), taskDescription: .constant("Task description"))
+    }
+}

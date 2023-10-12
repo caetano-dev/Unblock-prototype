@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0578FB2AD7719D00E63969 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0578FA2AD7719D00E63969 /* TaskListView.swift */; };
 		EF0B3DE12AD5F5E30051395E /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B3DE02AD5F5E30051395E /* CheckboxToggleStyle.swift */; };
 		EF0B3DE42AD5FDCB0051395E /* CreateTaskButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B3DE32AD5FDCB0051395E /* CreateTaskButtonView.swift */; };
 		EF11AFF92AD4A3A7004CB77E /* unblockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11AFF82AD4A3A7004CB77E /* unblockApp.swift */; };
-		EF11AFFB2AD4A3A7004CB77E /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11AFFA2AD4A3A7004CB77E /* TaskListView.swift */; };
+		EF11AFFB2AD4A3A7004CB77E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11AFFA2AD4A3A7004CB77E /* HomeView.swift */; };
 		EF11AFFD2AD4A3A8004CB77E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF11AFFC2AD4A3A8004CB77E /* Assets.xcassets */; };
 		EF11B0002AD4A3A8004CB77E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF11AFFF2AD4A3A8004CB77E /* Preview Assets.xcassets */; };
 		EF11B0072AD4A663004CB77E /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11B0062AD4A663004CB77E /* TaskView.swift */; };
+		EF39E7B22AD7775300B382F3 /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39E7B12AD7775300B382F3 /* BottomMenuView.swift */; };
 		EFCA28A32AD4BC220058A377 /* TaskInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA28A22AD4BC220058A377 /* TaskInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF0578FA2AD7719D00E63969 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		EF0B3DE02AD5F5E30051395E /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		EF0B3DE32AD5FDCB0051395E /* CreateTaskButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskButtonView.swift; sourceTree = "<group>"; };
 		EF11AFF52AD4A3A7004CB77E /* unblock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unblock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF11AFF82AD4A3A7004CB77E /* unblockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unblockApp.swift; sourceTree = "<group>"; };
-		EF11AFFA2AD4A3A7004CB77E /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		EF11AFFA2AD4A3A7004CB77E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EF11AFFC2AD4A3A8004CB77E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF11AFFF2AD4A3A8004CB77E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF11B0062AD4A663004CB77E /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		EF39E7B12AD7775300B382F3 /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
 		EFCA28A22AD4BC220058A377 /* TaskInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +44,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0578F72AD76C1900E63969 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EF0578F82AD76C3F00E63969 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF0578F92AD76D6200E63969 /* OtherViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherViews;
+			sourceTree = "<group>";
+		};
 		EF0B3DE22AD5F6970051395E /* Styles */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,8 +92,11 @@
 		EF11AFF72AD4A3A7004CB77E /* unblock */ = {
 			isa = PBXGroup;
 			children = (
+				EF0578F92AD76D6200E63969 /* OtherViews */,
+				EF0578F82AD76C3F00E63969 /* Models */,
+				EF0578F72AD76C1900E63969 /* ViewModels */,
 				EF0B3DE22AD5F6970051395E /* Styles */,
-				EF16F8B42AD5CB29007E6231 /* Tasks */,
+				EF16F8B42AD5CB29007E6231 /* Views */,
 				EF11AFF82AD4A3A7004CB77E /* unblockApp.swift */,
 				EF11AFFC2AD4A3A8004CB77E /* Assets.xcassets */,
 				EF11AFFE2AD4A3A8004CB77E /* Preview Content */,
@@ -84,15 +112,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		EF16F8B42AD5CB29007E6231 /* Tasks */ = {
+		EF16F8B42AD5CB29007E6231 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				EFCA28A22AD4BC220058A377 /* TaskInputView.swift */,
-				EF11AFFA2AD4A3A7004CB77E /* TaskListView.swift */,
 				EF11B0062AD4A663004CB77E /* TaskView.swift */,
+				EF11AFFA2AD4A3A7004CB77E /* HomeView.swift */,
+				EF0578FA2AD7719D00E63969 /* TaskListView.swift */,
 				EF0B3DE32AD5FDCB0051395E /* CreateTaskButtonView.swift */,
+				EF39E7B12AD7775300B382F3 /* BottomMenuView.swift */,
 			);
-			path = Tasks;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0578FB2AD7719D00E63969 /* TaskListView.swift in Sources */,
 				EFCA28A32AD4BC220058A377 /* TaskInputView.swift in Sources */,
 				EF0B3DE12AD5F5E30051395E /* CheckboxToggleStyle.swift in Sources */,
-				EF11AFFB2AD4A3A7004CB77E /* TaskListView.swift in Sources */,
+				EF11AFFB2AD4A3A7004CB77E /* HomeView.swift in Sources */,
+				EF39E7B22AD7775300B382F3 /* BottomMenuView.swift in Sources */,
 				EF0B3DE42AD5FDCB0051395E /* CreateTaskButtonView.swift in Sources */,
 				EF11B0072AD4A663004CB77E /* TaskView.swift in Sources */,
 				EF11AFF92AD4A3A7004CB77E /* unblockApp.swift in Sources */,

@@ -6,11 +6,18 @@ struct CreateTaskButtonView: View {
     @Binding var taskName: String
     @Binding var taskDescription: String
     var body: some View {
-        Button("Create new task") {
-            isCreatingTask.toggle()
-        }.sheet(isPresented: $isCreatingTask) {
-            TaskInputView(taskName: $taskName, taskDescription: $taskDescription, isPresented: $isCreatingTask)
-        }
+        Button(action: {
+                        isCreatingTask.toggle()
+                    }) {
+                        Text("Create Task")
+                            .foregroundStyle(Color.black)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .background(Color.blue)
+                    
+                .sheet(isPresented: $isCreatingTask) {
+                    TaskInputView(taskName: $taskName, taskDescription: $taskDescription, isPresented: $isCreatingTask)
+                }.padding()
     }
 }
 
