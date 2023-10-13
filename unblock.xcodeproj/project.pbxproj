@@ -18,6 +18,8 @@
 		EF4A0EBF2AD84B5B006B10B4 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A0EBE2AD84B5B006B10B4 /* DataSourceMock.swift */; };
 		EF4A0EC32AD84FC7006B10B4 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A0EC22AD84FC7006B10B4 /* TaskItemView.swift */; };
 		EF4A0EC52AD85C01006B10B4 /* TasksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A0EC42AD85C01006B10B4 /* TasksListView.swift */; };
+		EFE2F2572AD9EDA2003C5118 /* CreateNewTaskButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE2F2562AD9EDA2003C5118 /* CreateNewTaskButtonView.swift */; };
+		EFE2F25B2AD9F611003C5118 /* GardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE2F25A2AD9F611003C5118 /* GardenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EF4A0EC22AD84FC7006B10B4 /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		EF4A0EC42AD85C01006B10B4 /* TasksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListView.swift; sourceTree = "<group>"; };
 		EF66151E2AD89A1400034420 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		EFE2F2562AD9EDA2003C5118 /* CreateNewTaskButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewTaskButtonView.swift; sourceTree = "<group>"; };
+		EFE2F25A2AD9F611003C5118 /* GardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				EF4A0EC22AD84FC7006B10B4 /* TaskItemView.swift */,
 				EF4A0EC42AD85C01006B10B4 /* TasksListView.swift */,
 				EF148AAB2AD88FAA000A2449 /* CreateTaskView.swift */,
+				EFE2F2562AD9EDA2003C5118 /* CreateNewTaskButtonView.swift */,
+				EFE2F25A2AD9F611003C5118 /* GardenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,11 +200,13 @@
 			files = (
 				EF4A0EC32AD84FC7006B10B4 /* TaskItemView.swift in Sources */,
 				EF148AAC2AD88FAA000A2449 /* CreateTaskView.swift in Sources */,
+				EFE2F2572AD9EDA2003C5118 /* CreateNewTaskButtonView.swift in Sources */,
 				EF4A0EBF2AD84B5B006B10B4 /* DataSourceMock.swift in Sources */,
 				EF148AAA2AD88623000A2449 /* CreateCalendarEvent.swift in Sources */,
 				EF4A0EBA2AD849C2006B10B4 /* TaskType.swift in Sources */,
 				EF4A0EC52AD85C01006B10B4 /* TasksListView.swift in Sources */,
 				EF148AAE2AD89374000A2449 /* RequestCalendarAccess.swift in Sources */,
+				EFE2F25B2AD9F611003C5118 /* GardenView.swift in Sources */,
 				EF4A0EBD2AD84AB6006B10B4 /* ContentView.swift in Sources */,
 				EF11AFF92AD4A3A7004CB77E /* unblockApp.swift in Sources */,
 			);

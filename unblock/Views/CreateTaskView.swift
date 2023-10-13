@@ -5,6 +5,12 @@ struct CreateTaskView: View {
     @Binding var task: TaskType
     @Binding var isCreatingTask: Bool
 
+    // Create an initializer with default values for bindings
+    init(task: Binding<TaskType> = .constant(TaskType(id: 0, name: "", description: "", startDate: Date(), endDate: Date(), durationInMinutes: 0, completed: false, createdAt: Date(), isHabit: false, location: "", attendees: [], reminders: [], recurrence: "", colorCategory: "", notes: "", priority: 0, url: nil, isAllDay: false, organizer: "", status: "", tags: [])), isCreatingTask: Binding<Bool> = .constant(false)) {
+        _task = task
+        _isCreatingTask = isCreatingTask
+    }
+
     var body: some View {
         NavigationView {
             Form {
@@ -36,9 +42,7 @@ struct CreateTaskView: View {
 
 struct CreateTaskView_Preview: PreviewProvider {
     static var previews: some View {
-        CreateTaskView(
-            task: .constant(TaskType(id: 1, name: "", description: "", startDate: Date(), endDate: Date(), durationInMinutes: 60, completed: false, createdAt: Date(), isHabit: false, location: nil, attendees: nil, reminders: nil, recurrence: nil, colorCategory: nil, notes: nil, priority: nil, url: nil, isAllDay: false, organizer: nil, status: nil, tags: nil)),
-            isCreatingTask: .constant(true)
-        )
+        CreateTaskView()
     }
 }
+
